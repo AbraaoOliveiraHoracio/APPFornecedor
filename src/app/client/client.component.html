@@ -1,8 +1,9 @@
+
 <div>
   <div class="row">
     <div class="col-8 m-auto">
 
-      <form [formGroup]="formGroupFornecedor">
+      <form [formGroup]="formGroupClient">
         <div class="mb-3">
           <div class="display-6 text-center">
             Cadastro de Clientes
@@ -23,6 +24,13 @@
           <label for="endereco" class="form-label">Endereço</label>
           <input type="text" formControlName="endereco" class="form-control" id="endereco" placeholder="endereco">
         </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" formControlName="email" class="form-control" id="email" placeholder="Email">
+          <div *ngIf="submitted && email.invalid">
+            <small class="text-danger">Email inváido!</small>
+          </div>
+        </div>
         <div class="mb-3 d-flex justify-content-end">
           <button class="btn btn-primary" (click)="save()">Salvar</button>
           <button class="btn btn-danger" (click)="clear()">Limpar</button>
@@ -39,20 +47,21 @@
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>
             <th scope="col">Endereço</th>
+            <th scope="col">Email</th>
             <th scope="col">Opcões</th>
 
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let Fornecedor of fornecedor">
-            <th scope="row">{{Fornecedor.id}}</th>
-            <td>{{Fornecedor.name}} </td>
-            <td>{{Fornecedor.telefone}} </td>
-            <td>{{Fornecedor.endereco}} </td>
-
+          <tr *ngFor="let client of clients">
+            <th scope="row">{{client.id}}</th>
+            <td>{{client.name}} </td>
+            <td>{{client.telefone}} </td>
+            <td>{{client.endereco}} </td>
+            <td>{{client.email}}</td>
             <td class="d-flex justify-content-end">
-              <button class="btn btn-primary me-1" (click)="edit(Fornecedor)">Editar</button>
-              <button class="btn btn-danger " (click)="delete(Fornecedor)">Excluir</button>
+              <button class="btn btn-primary me-1" (click)="edit(client)">Editar</button>
+              <button class="btn btn-danger " (click)="delete(client)">Excluir</button>
             </td>
 
           </tr>

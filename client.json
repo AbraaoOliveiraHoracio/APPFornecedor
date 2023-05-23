@@ -1,0 +1,33 @@
+{
+  "clients": [
+    {
+      "id": 4,
+      "name": "Maria Muclonn",
+      "telefone": "11935454",
+      "endereço": "RUA Muclonn",
+      "email": "Pipokinha@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Marcio Caralho",
+      "telefone": "11935454",
+      "endereço": "RUA Muclonn",
+      "email": "MarcioPintoA@hotmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Amama Pinto Junior",
+      "telefone": "11935454",
+      "endereço": "RUA Muclonn",
+      "email": "Mama@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "Monteiro Ferneiro",
+      "telefone": "11935454",
+      "endereço": "RUA Muclonn",
+      "email": "MonteiroFerneiro@gmail.com"
+    }
+  ]
+}
+
