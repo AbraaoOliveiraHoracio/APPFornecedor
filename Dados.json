@@ -27,7 +27,39 @@
       "telefone": "11935454",
       "endereço": "RUA Muclonn",
       "email": "MonteiroFerneiro@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "Abraao",
+      "telefone": "1163839784",
+      "endereco": "Rua mama MINHAhola",
+      "email": "Aa@hsdkljhfg"
+    }
+  ],
+  "fornecedor": [
+    {
+      "id": 2,
+      "name": "Marcio Caralho",
+      "telefone": "11935454",
+      "endereço": "RUA Muclonn"
+    },
+    {
+      "id": 3,
+      "name": "Amama Pinto Junior",
+      "telefone": "11935454",
+      "endereço": "RUA Muclonn"
+    },
+    {
+      "id": 5,
+      "name": "Abraao",
+      "telefone": "1163839784",
+      "endereco": "Rua mama MINHAhola"
+    },
+    {
+      "id": 6,
+      "name": "Caue",
+      "telefone": "1163839784",
+      "endereco": "Rua mama"
     }
   ]
 }
-
