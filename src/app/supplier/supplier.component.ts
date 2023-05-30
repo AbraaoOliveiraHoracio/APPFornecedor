@@ -16,6 +16,7 @@ import { FornecedorService } from '../fornecedor.service';
     submitted: boolean = false;
     formGroupFornecedor: FormGroup;
 
+
     constructor(
       private fornecedorService: FornecedorService,
       private formBuilder: FormBuilder
@@ -25,6 +26,7 @@ import { FornecedorService } from '../fornecedor.service';
         name: ['',[Validators.required] ],
         telefone: ['',[Validators.required] ],
         endereco: ['',[Validators.required] ],
+         pais:[ ],
       });
     }
     ngOnInit(): void {

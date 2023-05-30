@@ -18,10 +18,26 @@
         <div class="mb-3">
           <label for="telefone" class="form-label">Telefone</label>
           <input type="text" formControlName="telefone" class="form-control" id="telefone" placeholder="telefone">
+          <div *ngIf="submitted && telefone.invalid">
+            <small class="text-danger">Telefone inváido!</small>
+          </div>
         </div>
         <div class="mb-3">
           <label for="endereco" class="form-label">Endereço</label>
           <input type="text" formControlName="endereco" class="form-control" id="endereco" placeholder="endereco">
+          <div *ngIf="submitted && endereco.invalid">
+            <small class="text-danger">Endereço inváido!</small>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="pais" class="form-label">Pais</label>
+          <select class="form-select"  formControlName="pais" aria-label="Default select example" placeholder="pais">
+            <option value="Japão">Japão</option>
+            <option value="Italia">Italia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="China">China</option>
+            <option value="Portugal">Portugal</option>
+          </select>
         </div>
         <div class="mb-3 d-flex justify-content-end">
           <button class="btn btn-primary" (click)="save()">Salvar</button>
@@ -39,6 +55,7 @@
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>
             <th scope="col">Endereço</th>
+            <th scope="col">Pais</th>
             <th scope="col">Opcões</th>
 
           </tr>
@@ -49,6 +66,7 @@
             <td>{{Fornecedor.name}} </td>
             <td>{{Fornecedor.telefone}} </td>
             <td>{{Fornecedor.endereco}} </td>
+            <td>{{Fornecedor.pais}} </td>
 
             <td class="d-flex justify-content-end">
               <button class="btn btn-primary me-1" (click)="edit(Fornecedor)">Editar</button>

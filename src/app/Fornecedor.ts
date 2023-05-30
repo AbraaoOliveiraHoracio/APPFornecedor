@@ -3,4 +3,5 @@ export interface Fornecedor{
   name : string;
   telefone : number;
   endereco : string;
+  pais :string;
 }
