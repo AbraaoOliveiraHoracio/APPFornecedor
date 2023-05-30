@@ -83,5 +83,11 @@ import { FornecedorService } from '../fornecedor.service';
     get email() : any{
       return this.formGroupFornecedor.get("email");
     }
+    get endereco() : any{
+      return this.formGroupFornecedor.get("endereco");
+    }
+    get telefone() : any{
+      return this.formGroupFornecedor.get("telefone");
+    }
 }
 

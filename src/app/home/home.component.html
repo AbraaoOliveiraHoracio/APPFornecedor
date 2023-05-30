@@ -1,3 +1,80 @@
 <div class="container text-center">
+   
   <div class="display-6">Home</div>
+</div>
+
+           
+<div class="container text-center my-2 py-3 p-4">
+   
+  <p>
+        Caro Homem do Saco,     Saudações! Aqui estou eu, um mero mortal em
+    busca de uma parceria um tanto quanto...     diferente. Percebi que você tem
+    uma reputação bastante interessante no mundo das lendas     urbanas e fiquei
+    intrigado. Decidi, então, me aventurar e lhe fazer uma proposta inusitada:  
+      um pacto... bem-humorado!br     Em vez de oferecer minha alma em troca de
+    poderes obscuros, proponho que possamos firmar um acordo para pequenas
+    travessuras, todas elas com uma pitada de diversão. Pense na quantidade de
+    gargalhadas que poderíamos compartilhar!     Em troca da minha lealdade,
+    prometo ser seu assistente oficial de pegadinhas. Juntos, podemos espalhar
+    alegria em eventos sociais, festas de aniversário e até mesmo em reuniões
+    familiares tediosas. Imagine o quanto as pessoas ficarão surpresas quando
+    objetos se moverem misteriosamente ou quando elas forem pegar algo e... puf!
+    Desaparecer!     Claro, temos que estabelecer algumas regras. Nada de causar
+    danos físicos ou emocionais, pois nosso objetivo é proporcionar risadas
+    genuínas e momentos de descontração. Afinal, quem disse que demônios não
+    podem ter um senso de humor peculiar?     Além disso, gostaria de requisitar
+    alguns favores em ocasiões especiais. Por exemplo, quando eu estiver em uma
+    fila de trânsito interminável, seria ótimo se você pudesse fazer um pequeno
+    milagre e abrir caminho para mim. Tenho certeza de que a surpresa das
+    pessoas será memorável!     Então, o que me diz, Homem do Saco? Vamos firmar
+    esse pacto satírico e transformar o mundo em um lugar mais divertido? Tenho
+    certeza de que seremos uma dupla e tanto!     Aguardo sua resposta com
+    expectativa e um sorriso malicioso.     Seu parceiro de travessuras em
+    potencial,    
+  </p>
+
+  <form>
+    <label>
+      <input
+        type="radio"
+        name="pacto"
+        value="outroPacto"
+        [(ngModel)]="opcaoPacto"
+      />
+
+      Eu já tenho outro pacto
+    </label>
+
+    <br />
+
+    <label>
+      <input
+        type="radio"
+        name="pacto"
+        value="primeiroPacto"
+        [(ngModel)]="opcaoPacto"
+      />
+      Esse é meu primeiro pacto
+    </label>
+
+    <br />
+
+    <br />
+
+    <div class="container">
+      <h3>Esse e seu primeiro pacto?</h3>
+
+      <label for="aceitarPacto">
+        <input type="checkbox" id="aceitarPacto" [(ngModel)]="aceitarPacto" />
+
+        Aceito fazer o pacto com o Homem do Saco.
+      </label>
+
+      <br />
+
+      <button type="button" (click)="obterInformacoes()">
+        Obter Informações
+      </button>
+    </div>
+  </form>
 </div>

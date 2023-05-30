@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  opcaoPacto: string | undefined;
 
+  aceitarPacto: boolean = false;
+
+
+
+
+  obterInformacoes() {
+
+    console.log('Opção de pacto selecionada:', this.opcaoPacto);
+
+    console.log('Checkbox aceito:', this.aceitarPacto);
+
+  }
 }
